@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+
+
+.main-Wrap {
+  /* min-height, box-sizing */
+  max-width: 1024px;
+  padding-bottom: 100px;
+  height: auto;
+  margin: 0 auto;
+  min-height: 890px;
+}
+
+.component-Wrap {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.main-footer {
+  width: 100%;
+  min-height: 100px;
+  background: black;
+}
+
+
+/* 공통 Post */
+/* felx 로 두 파트로 나뉜 후 사용 */
+/* 가로로 먼저 나뉘고 세로 2파트로 나뉘는 컴포넌트와 */
+/* 가로 작업 없이 세로 2파트로 나뉘는 컴포넌트가 있다 */
+/* 통일하기 위해 모두 가로 작업을 먼저 할 것이고 */
+/* 가로가 필요없는 컴포넌트에선 빈 div로 영역을 채울 예정*/
+
+.Post-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-photo {
+  /* display 아래 다  */
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(102, 51, 153, 0.075);
+}
+
+.post-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.post-content-l,
+.post-content-r {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1210px) {
+  .post-content {
+    flex-wrap: wrap;
+    justify-content: center
+  }
+}
+
+
+
+
+/* 공통- */
+.pd20 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.space {
+  width: 100%;
+  height: 40px;
+}
+
+.Link {
+  width: 100%;
+  color: black;
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.felx-column {
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.red-warning {
+  font-size: 0.7rem;
+  color: red;
+}
+
+
+
+
+/* 
+
+#87B9E0
+#8D87E0
+#879DE0
+#55D0E0
+#AA87E0
+#C2CAE0
+
+*/
+
+
+/*  modal */
+/* classname 추후 세분화 */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 1200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 300px;
+  background: rgba(0, 0, 0, 0.164);
+  z-index: 999;
+}
+
+
+
+/*  mainpage */
+
+.Mainpage-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Mainpage-wrap>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.Mainpage-wrap h5 {
+  font-size: 1rem;
+}
+
+
+.Mainpage-wrap p {
+  font-size: 0.8rem;
+}

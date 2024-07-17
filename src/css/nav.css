@@ -1,0 +1,197 @@
+.nav-Wrap {
+    /* min-height, box-sizing, border, font-size*/
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+
+.nav-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* 높이조절은 추후 로고와 아이콘보고 결정 */
+    min-height: 60px;
+    align-items: center;
+}
+
+.nav-part-R {
+    flex: 1 1;
+}
+
+.nav-part-L {
+    flex: 0 0 120px;
+}
+
+.nav-part p {
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+/* ///////-/////////////////////////////////////// */
+
+.Loading-bar-wrap {
+    position: fixed;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 0px;
+    background: white;
+    display: flex;
+    justify-self: flex-start;
+    align-items: center;
+}
+
+.Loading-bar-wrap .loading-bar {
+    height: 10px;
+    background: rgb(138, 138, 138);
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+.Loading-dot-wrap {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Loading-dot-wrap .loading-dot {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Loading-dot-wrap .loading-dot>div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background: gray;
+    opacity: 0.5;
+}
+
+.Loading-dot-wrap .loading-dot>div:nth-child(1) {
+    animation-name: loadingDot1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.Loading-dot-wrap .loading-dot>div:nth-child(2) {
+    animation-name: loadingDot2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.Loading-dot-wrap .loading-dot>div:nth-child(3) {
+    animation-name: loadingDot3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loadingDot1 {
+    0% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0.5)
+    }
+}
+
+@keyframes loadingDot2 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.5)
+    }
+
+    100% {
+        transform: scale(1.5)
+    }
+}
+
+@keyframes loadingDot3 {
+    0% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(1.5)
+    }
+}
+
+
+/* //////////////////////////////////////// */
+
+.Url_empty-Wrap {
+    width: 100%;
+    min-height: 100px;
+    padding: 50px 0px 150px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Url_empty-Wrap .url_empty-box {
+    width: 400px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Url_empty-Wrap .url_empty-box h5 {
+    font-size: 1.2rem;
+    padding: 5px 100px;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    margin-bottom: 20px;
+}
+
+.Url_empty-Wrap .url_empty-box h6 {
+    font-size: 1rem;
+    padding: 2px 0px;
+}
+
+.Url_empty-Wrap .url_empty-box p {
+    font-size: 0.8rem;
+    padding: 2px 0px;
+}

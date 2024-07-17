@@ -1,0 +1,759 @@
+/* Guestpost-wrap,Teampost-wrap 은 main.css에서 Post-wrap으로 작업 */
+/* Photo는 각 컴포넌트에서 추후 처리 */
+/* content부분과 content-l,r flex처리는 main.css에서 작업 */
+
+
+.guestpost-content-l {
+    flex: 0 1 633.75px;
+    box-sizing: border-box;
+}
+
+.guestpost-content-r {
+    /* display 아래 다 */
+    flex: 0 1 380.25px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1210px) {
+    .guestpost-content-l {
+        max-width: 1000px;
+        flex: 1 1 99%;
+        box-sizing: border-box;
+    }
+
+    .guestpost-content-r {
+        max-width: 1000px;
+        flex: 1 1 99%;
+        box-sizing: border-box;
+    }
+}
+
+.guestpost-content-section {
+    /* mh */
+    width: 100%;
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    background: rgba(231, 231, 231, 0.137);
+}
+
+.guestpost-content-section>div {
+    width: 100%;
+}
+
+.guestpost-content-section .guestpost-content-title {
+    padding: 2.5px 0px;
+}
+
+.guestpost-content-section .guestpost-content-title h5 {
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.guestpost-content-section .guestpost-content-host {
+    padding: 0px 0px 5px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+.guestpost-content-section .guestpost-content-host h6 {
+    font-size: 0.8rem;
+}
+
+.guestpost-content-section .guestpost-content-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2.5px 0px;
+}
+
+.guestpost-content-section .guestpost-content-info>div {
+    width: calc(40%);
+    padding: 5.5px 0px;
+}
+
+.guestpost-content-section .guestpost-content-info p {
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+}
+
+.guestpost-content-section .guestpost-content-memo {
+    padding: 5px 0px 2.5px 0px;
+}
+
+.guestpost-content-section .guestpost-content-memo p {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.guestpost-content-section .guestpost-content-warning {
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.guestpost-content-section .guestpost-content-warning p {
+    width: 100%;
+    color: rgb(255, 83, 83);
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.guestpost-content-section .guestpost-content-position {
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.guestpost-content-section .guestpost-content-position h5 {
+    width: 100%;
+    padding: 2.5px 0px 2.5px 0px;
+    font-size: 0.9rem;
+}
+
+.guestpost-content-section .guestpost-content-position>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px 0px;
+}
+
+.guestpost-content-section .guestpost-content-position>div p {
+    font-size: 0.8rem;
+}
+
+.guestpost-content-section .guestpost-content-position .recruitmentfull>p {
+    text-decoration-line: line-through;
+}
+
+.guestpost-content-section .guestpost-content-regulation {
+    width: 100%;
+    padding: 2.5px 0px;
+}
+
+.guestpost-content-section .guestpost-content-regulation h5 {
+    width: 100%;
+    padding: 5px 0px 1px 0px;
+    font-size: 0.9rem;
+}
+
+.guestpost-content-section .guestpost-content-regulation p {
+    width: 100%;
+    font-size: 0.7rem;
+    color: red;
+    margin: 2.5px 0px;
+}
+
+.guestpost-content-section .guestpost-content-apply {
+    width: 100%;
+}
+
+.guestpost-content-section .guestpost-content-apply>* {
+    margin: 2px 0px;
+}
+
+.guestpost-content-section .guestpost-content-apply p {
+    width: 100%;
+    font-size: 0.7rem;
+}
+
+.guestpost-content-section .guestpost-content-apply h6 {
+    width: 100%;
+    font-size: 0.8rem;
+    color: blue;
+}
+
+.guestpost-content-section .guestpost-content-apply h5 {
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.guestpost-content-section .guestpost-content-apply .kakaomap {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 0, 0, 0.116);
+    margin: 5px 0px;
+}
+
+.guestpost-content-section .guestpost-content-button {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.guestpost-content-section .guestpost-content-button>p {
+    font-size: 0.8rem;
+    color: gray;
+    text-decoration: underline;
+}
+
+.guestpost-content-section .guestpost-content-button>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.guestpost-content-section .guestpost-content-button>div button {
+    /* wd */
+    width: 100px;
+    min-height: 25px;
+    border: none;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.guestpost-content-section .guestpost-content-button>div:first-child button {
+    background: #87b9e0;
+    color: white;
+}
+
+.guestpost-content-section .guestpost-content-button>div:first-child div {
+    width: 100px;
+    min-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guestpost-content-section .guestpost-content-button>div:first-child div p {
+    font-size: 0.8rem;
+}
+
+.guestpost-content-section .guestpost-content-button>div:first-child div:last-of-type p {
+    font-size: 0.8rem;
+    color: gray;
+    text-decoration: underline;
+}
+
+.Guestpost-wrap .modalteam-guest {
+    width: 400px;
+    min-height: 200px;
+    background: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-title {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 5px 0px 10px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-body .guest-info {
+    width: 100%;
+}
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-body .guest-info p {
+    font-size: 0.7rem;
+}
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-body .guest-select {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-body .guest-select .guset-select-box {
+    width: 60px;
+    min-width: 20px;
+    padding: 3px 3px 10px 3px;
+    box-sizing: border-box;
+    background: rgba(128, 128, 128, 0.089);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-body .guest-select .select {
+    color: white !important;
+}
+
+.modalteam-guest-body .guest-select .guset-select-box .select-box-head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalteam-guest-body .guest-select .guset-select-box .select-box-head p {
+    font-size: 0.8rem;
+}
+
+.modalteam-guest-body .guest-select .guset-select-box .select-box-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalteam-guest-body .guest-select .guset-select-box .select-box-body p {
+    margin: 2px 0px 0px 0px;
+    font-size: 0.7rem;
+}
+
+.modalteam-guest-body .guest-select .guset-select-box .recruitmentfull p {
+    text-decoration-line: line-through;
+}
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0px;
+}
+
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-button .select-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-button .select-button button {
+    width: 50px;
+    height: 30px;
+    background: rgba(175, 175, 175, 0.26);
+    border: none;
+    margin: 0px 5px 0px 5px;
+    cursor: pointer;
+}
+
+.Guestpost-wrap .modalteam-guest .modalteam-guest-button .select-button button:first-of-type {
+    background: #87b9e0;
+    color: white;
+}
+
+/* Team */
+/* .teampost-photo {
+    
+} */
+
+.teampost-content-l {
+    flex: 0 1 380.25px;
+}
+
+.teampost-content-r {
+    /* display 아래 다 */
+    flex: 0 1 633.75px;
+}
+
+@media (max-width: 1210px) {
+    .teampost-content-l {
+        max-width: 1000px;
+        flex: 1 1 98%;
+        box-sizing: border-box;
+    }
+
+    .teampost-content-r {
+        max-width: 1000px;
+        flex: 1 1 98%;
+        box-sizing: border-box;
+    }
+}
+
+.teampost-content-section {
+    /* mh */
+    width: 100%;
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    background: rgba(231, 231, 231, 0.137);
+}
+
+.teampost-content-section .teampost-content-title {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.teampost-content-section .teampost-content-title .teampost-content-logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    background: firebrick;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teampost-content-section .teampost-content-title .teampost-content-lnfo {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.teampost-content-section .teampost-content-title .teampost-content-info h5 {
+    margin: 2.5px;
+    font-size: 1rem;
+}
+
+.teampost-content-section .teampost-content-title .teampost-content-info p {
+    margin: 2.5px;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+
+
+.teampost-content-section .teampost-content-info2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: start;
+}
+
+.teampost-content-section .teampost-content-info2>div {
+    width: calc(45%);
+    padding: 2.5px;
+}
+
+.teampost-content-section .teampost-content-info2>div p {
+    font-size: 0.8rem;
+}
+
+.teampost-content-section .teampost-content-button {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.teampost-content-section .teampost-content-button>div {
+    width: 100px;
+    height: 25px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teampost-content-section .teampost-content-button>div:first-of-type p {
+    font-size: 0.7rem;
+}
+
+.teampost-content-section .teampost-content-button>div:last-of-type p {
+    font-size: 0.7rem;
+    color: gray;
+    text-decoration: underline;
+}
+
+.teampost-content-section .teampost-content-button button {
+    width: 100px;
+    height: 25px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.teampost-content-section .teampost-content-button button:first-of-type {
+    background: #87b9e0;
+    color: white;
+}
+
+.teampost-content-section .teampost-content-memo {
+    width: 100%;
+    min-height: 200px;
+    margin: 10px 0px;
+}
+
+.teampost-content-section .teampost-content-memo p {
+    font-size: 0.8rem;
+}
+
+.teampost-content-section .teampost-content-view {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.teampost-content-section .teampost-content-view p {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+
+/* Bulletin-Post */
+
+.Bulletinpost-wrap {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.Bulletinpost-wrap>div {
+    width: 100%;
+}
+
+.Bulletinpost-wrap .bulletinpost-head {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px 10px 0px;
+    border-top: 2px solid #87b9e059;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+}
+
+.bulletinpost-head .post-title {
+    width: 100%;
+    padding: 4px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.bulletinpost-head .post-title h5 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+    font-size: 0.8rem;
+}
+
+.bulletinpost-head .post-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bulletinpost-head .post-info>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post-info .post-info-l .post-nickname,
+.post-info .post-info-l .post-date {
+    margin: 0px 10px 0px 0px;
+}
+
+.post-info .post-info-l>div p {
+    font-size: 0.7rem;
+    text-overflow: ellipsis;
+}
+
+
+.post-info .post-info-r .post-view,
+.post-info .post-info-r .post-like,
+.post-info .post-info-r .post-comment {
+    margin: 0px 0px 0px 10px;
+}
+
+.post-info .post-info-r>div p {
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.Bulletinpost-wrap .bulletinpost-body {
+    min-height: 300px;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bulletinpost-body .post-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bulletinpost-body .post-content p {
+    font-size: 0.7rem;
+}
+
+.bulletinpost-body .post-box {
+    width: 100px;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulletinpost-body .post-box .like-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.048);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.bulletinpost-body .post-box .userlike {
+    background: rgba(255, 0, 0, 0.363);
+}
+
+.Bulletinpost-wrap .bulletinpost-footer {
+    min-height: 100px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bulletinpost-footer .post-write-comment {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.bulletinpost-footer .post-write-comment input {
+    flex: 1 1;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    min-height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.048);
+    outline: none;
+    font-size: 0.7rem;
+}
+
+.bulletinpost-footer .post-write-comment button {
+    width: 50px;
+    font-size: 0.7rem;
+    margin-left: 5px;
+    background: #87B9E0;
+    color: white;
+    border: none;
+}
+
+
+.bulletinpost-footer .post-view-comment {
+    width: 100%;
+    min-height: 100px;
+}
+
+.post-view-comment .comment {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+}
+
+.post-view-comment .comment .comment-nickname {
+    width: 120px;
+    padding: 0px 0px 0px 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.post-view-comment .comment .comment-nickname p:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.post-view-comment .comment .comment-nickname p:nth-of-type(1) span {
+    cursor: pointer;
+    font-size: 0.4rem;
+}
+
+.post-view-comment .comment .comment-nickname p:nth-of-type(2) {
+    font-size: 0.6rem;
+    color: gray;
+}
+
+.post-view-comment .comment .comment-content {
+    flex: 1 1;
+}
+
+.post-view-comment .comment .comment-content p {
+    font-size: 0.7rem;
+}
+
+
+
+
+.Emptypost-wrap {
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptypost-box {
+    width: 400px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptypost-box h6 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.emptypost-box p {
+    font-size: 0.8rem;
+    padding: 10px 0px;
+}
+
+.emptypost-box button {
+    padding: 10px;
+    font-size: 0.7rem;
+    margin-left: 5px;
+    background: #87B9E0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}

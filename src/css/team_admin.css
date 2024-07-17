@@ -1,0 +1,504 @@
+/* Teampostadmin */
+.Teampostadmin-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Teampostadmin-wrap .teampostadmin-section {
+    width: 100%;
+    background: rgba(102, 51, 153, 0.068);
+    box-sizing: border-box;
+    margin: 2.5px 0px;
+    padding: 2.5px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Teampostadmin-wrap .teampostadmin-section .teampostadmin-menu {
+    width: 100%;
+    min-height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Teampostadmin-wrap .teampostadmin-section .teampostadmin-menu h5 {
+    font-size: 0.8rem;
+}
+
+
+/* setting */
+.Teampostadminsetting-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.Teampostadminsetting-wrap .Teampostadminsetting-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+}
+
+.Teampostadminsetting-wrap .Teampostadminsetting-section .Teampostadminsetting-setting {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    box-sizing: border-box;
+}
+
+.Teampostadminsetting-wrap .Teampostadminsetting-section .Teampostadminsetting-setting>div {
+    width: 100%;
+}
+
+.Teampostadminsetting-setting .setting-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Teampostadminsetting-setting .setting-title p {
+    font-size: 0.8rem;
+    color: rgb(44, 44, 44);
+    padding: 0px 5px;
+}
+
+.Teampostadminsetting-setting .setting-title>div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Teampostadminsetting-setting .setting-title .overlappingchecktext {
+    color: blue;
+    text-decoration: underline;
+    user-select: none;
+    font-size: 0.7rem;
+}
+
+.Teampostadminsetting-setting .setting-title .overlappingdecisiontext {
+    color: rgb(128, 128, 128);
+    text-decoration: underline;
+    user-select: none;
+    font-size: 0.7rem;
+}
+
+.Teampostadminsetting-setting .setting-title .red-warning {
+    color: red;
+    user-select: none
+}
+
+.Teampostadminsetting-setting .setting-title .reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Teampostadminsetting-setting .setting-title .reset p {
+    color: rgb(143, 143, 156);
+    text-decoration: underline;
+    font-size: 0.7rem;
+    user-select: none
+}
+
+
+.Teampostadminsetting-setting .setting-body {
+    min-height: 30px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+
+.Teampostadminsetting-setting .setting-body input {
+    width: 100%;
+    height: 35px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: rgba(224, 224, 224, 0.137);
+    border: 1px solid rgba(224, 224, 224, 0.137);
+    font-size: 0.7rem;
+}
+
+.Teampostadminsetting-setting .setting-body .warning {
+    background: rgba(255, 0, 0, 0.13) !important;
+    animation: warn;
+    animation-duration: 0.5s;
+}
+
+@keyframes warn {
+    0% {
+        transform: translateX(0);
+    }
+
+    15% {
+        transform: translateX(-10px);
+    }
+
+    30% {
+        transform: translateX(10px);
+    }
+
+    45% {
+        transform: translateX(-10px);
+    }
+
+    60% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.Teampostadminsetting-setting .select {
+    display: flex;
+    flex-direction: row;
+}
+
+.Teampostadminsetting-setting .select .choose {
+    background: skyblue !important
+}
+
+.Teampostadminsetting-setting .select .choose p {
+    color: white !important;
+}
+
+.Teampostadminsetting-setting .select .select-box {
+    padding: 5px 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    background: rgba(172, 212, 228, 0.281);
+}
+
+.Teampostadminsetting-setting .select .select-box p {
+    width: 100%;
+    font-size: 0.8rem;
+    user-select: none;
+}
+
+.Teampostadminsetting-wrap .Teampostadminsetting-section .Teampostadminsetting-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Teampostadminsetting-button button {
+    width: 100px;
+    height: 45px;
+    margin: 10px;
+    font-size: 0.9rem;
+    background: #87b9e0;
+    color: white;
+    border: none;
+}
+
+.modalteam-setting {
+    width: 400px;
+    min-height: 200px;
+    background: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.modalteam-setting>div {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.modalteam-setting .modalteam-setting-title h5 {
+    font-size: 0.8rem;
+}
+
+.modalteam-setting .modalteam-setting-body p {
+    font-size: 0.7rem;
+}
+
+.modalteam-setting .modalteam-setting-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.modalteam-setting .modalteam-setting-button button {
+    width: 60px;
+    padding: 5px 0px;
+    margin: 0px 5px;
+    border: none;
+    font-size: 0.7rem;
+    background: #87b9e0;
+    color: white;
+}
+
+/* member */
+
+.Teampostadminmember-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 10px 20px;
+    box-sizing: border-box;
+    min-height: 0px;
+    border-bottom: 1px solid rgba(178, 34, 34, 0.192);
+}
+
+.Teampostadminmember-wrap .teampostadminmember-option {
+    width: 100%;
+    min-height: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Teampostadminmember-wrap .teampostadminmember-option .option-box {
+    padding: 7.5px 10px;
+    margin-right: 10px;
+    background: rgba(199, 199, 199, 0.582);
+    border-radius: 10px;
+    position: relative;
+    user-select: none;
+}
+
+.Teampostadminmember-wrap .teampostadminmember-option .option-box p {
+    font-size: 0.8rem;
+}
+
+.Teampostadminmember-wrap .teampostadminmember-option .select {
+    background: rgb(85, 165, 189) !important;
+    color: white;
+}
+
+.Teampostadminmember-wrap .teampostadminmember-option .option-box>div {
+    position: absolute;
+    background: rgba(199, 25, 25);
+    padding: 3px 7px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -10px;
+    right: -10px;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.Teampostadminmember-wrap .teampostadminmember-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.Teampostadminmember-wrap .teampostadminmember-body .member-box {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teampostadminmember-body .member-box .member-box-l {
+    display: flex;
+    flex-direction: column;
+}
+
+.teampostadminmember-body .member-box .member-box-l>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 20px;
+    /* padding: 0px 20px; */
+}
+
+.teampostadminmember-body .member-box .member-box-l>div h6 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.teampostadminmember-body .member-box .member-box-l>div h6 span {
+    font-size: 0.7rem;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.teampostadminmember-body .member-box .member-box-l>div p {
+    font-size: 0.7rem;
+    color: gray;
+    padding-right: 5px;
+}
+
+
+.teampostadminmember-body .member-box .member-box-r {
+    padding: 0px 15px;
+}
+
+.teampostadminmember-body .member-box .member-box-r>div {
+    background: rgba(65, 104, 187, 0.329);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.teampostadminmember-body .member-box .member-box-r>div p {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+
+
+/* modal */
+
+.modalteam-member {
+    width: 400px;
+    min-height: 200px;
+    background: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.modalteam-member>div {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalteam-member>div .modalteam-member-title {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+    ;
+}
+
+.modalteam-member>div .modalteam-member-body {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalteam-member>div .modalteam-member-body>div {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modalteam-member>div .modalteam-member-body>div .option-title,
+.modalteam-member>div .modalteam-member-body>div .management-title {
+    width: 100%;
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modalteam-member>div .modalteam-member-body>div .option-title input {
+    margin-right: 7px;
+}
+
+.modalteam-member>div .modalteam-member-body>div .option-title p,
+.modalteam-member>div .modalteam-member-body>div .management-title p {
+    font-size: 0.8rem;
+}
+
+.modalteam-member>div .modalteam-member-body>div .option-body {
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.modalteam-member>div .modalteam-member-body>div .option-body>div {
+    display: flex;
+    align-items: center;
+}
+
+.modalteam-member>div .modalteam-member-body>div .option-body select {
+    margin-right: 10px;
+}
+
+.modalteam-member>div .modalteam-member-body>div .option-body button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background: rgba(165, 42, 42, 0.26);
+    border: none;
+}
+
+.modalteam-member>div .modalteam-member-body>div .disable-body {
+    /* display: none; */
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.modalteam-member>div .modalteam-member-body>div .management-body {
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.modalteam-member>div .modalteam-member-body>div .management-body p {
+    font-size: 0.775rem;
+}
+
+.modalteam-member>div .modalteam-member-body>div .management-body select {
+    margin-right: 5px;
+}
+
+.modalteam-member>div .modalteam-member-body>div .management-body button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background: rgba(165, 42, 42, 0.26);
+    border: none;
+}
+
+.modalteam-member>div .modalteam-member-body>div .management-body .withdrawal {
+    background: rgba(42, 126, 165, 0.26) !important;
+}
+
+
+.modalteam-member>div .modalteam-member-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+
+.modalteam-member>div .modalteam-member-button button {
+    padding: 5px 10px;
+    background: rgba(42, 126, 165, 0.26);
+    border: none;
+    margin: 0px 2.5px;
+}

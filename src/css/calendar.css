@@ -1,0 +1,270 @@
+.CalendarBoard-warp {
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.CalendarBoard-warp>div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.CalendarBoard-warp .calenderboard-button {
+    flex: 0 0 20px;
+    height: 20px;
+    background: rgb(125, 145, 120);
+    border-radius: 20px;
+}
+
+.CalendarBoard-warp .button_none {
+    background: rgb(199, 199, 199) !important;
+    pointer-events: none;
+}
+
+.CalendarBoard-warp .calenderboard-day {
+    flex: 1 1;
+    min-width: 50px;
+    max-width: 100px;
+    margin: 0px 10px;
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.CalendarBoard-warp .calenderboard-day p {
+    font-size: 0.8rem;
+}
+
+.CalendarBoard-warp .day_clicked {
+    background: #87B9E0;
+    color: white;
+}
+
+.CalendarBoard-warp .day_clicked p {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
+
+
+/*  -----------------CalenderMypage */
+
+
+.CalenderMypage-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CalenderMypage-wrap .calender-schedule {
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CalenderMypage-wrap .calender-schedule .schedule-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+.CalenderMypage-wrap .calender-schedule .schedule-title h5 {
+    font-size: 0.8rem;
+}
+
+.CalenderMypage-wrap .calender-schedule .schedule-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.CalenderMypage-wrap .calender-schedule .schedule-body .schedule-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1px 0px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.schedule-body .schedule-section .section-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 5px;
+}
+
+.schedule-body .schedule-section .section-info p {
+    font-size: 0.7rem;
+}
+
+
+.schedule-body .schedule-section .section-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 5px;
+}
+
+.schedule-body .schedule-section .section-data .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+    margin: 0px 3px;
+}
+
+.schedule-body .schedule-section .section-data p {
+    font-size: 0.7rem;
+    padding: 0px 2px;
+}
+
+
+.schedule-body .schedule-section .section-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+}
+
+.schedule-body .schedule-section .section-link p {
+    font-size: 0.7rem;
+    color: gray;
+    text-decoration: underline;
+}
+
+
+
+/* react-calender 기본서식 
+   잘 모르고 기능에 따라 걸린 것들도 많기에 최소한만 수정예쩡
+*/
+.react-calendar {
+    max-width: 100%;
+    border: none;
+    color: #222;
+}
+
+.react-calendar__navigation button {
+    color: #6f48eb;
+    min-width: 44px;
+    background: none;
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: #f8f8fa;
+}
+
+.react-calendar__navigation button[disabled] {
+    background-color: #f0f0f0;
+}
+
+abbr[title] {
+    text-decoration: none;
+}
+
+/* .react-calendar__month-view__days__day--weekend {
+    color: #d10000;
+   } */
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background: #f8f8fa;
+    color: #6f48eb;
+    border-radius: 6px;
+}
+
+.react-calendar__tile--now {
+    background: #6f48eb33;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #6f48eb;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+    background: #6f48eb33;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #6f48eb;
+}
+
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+    background: #f8f8fa;
+}
+
+.react-calendar__tile--active {
+    background: #6f48eb;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background: #6f48eb;
+    color: white;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+    background-color: #f8f8fa;
+}
+
+.react-calendar__tile--range {
+    background: #f8f8fa;
+    color: #6f48eb;
+    border-radius: 0;
+}
+
+.react-calendar__tile--rangeStart {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background: #6f48eb;
+    color: white;
+}
+
+.react-calendar__tile--rangeEnd {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: #6f48eb;
+    color: white;
+}
+
+/* ----------------------------- */
+
+.calendar-dot-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    margin: 0px 1px;
+    top: 1px;
+}

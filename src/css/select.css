@@ -1,0 +1,82 @@
+.select-Wrap {
+    /* min-height */
+    width: 100%;
+    min-height: 250px;
+}
+
+.select-main {
+    /* mt */
+    width: 100%;
+}
+
+.select-title {
+    padding-top: 10px;
+}
+
+.select-title h6 {
+    font-size: 1rem;
+}
+
+.select-content {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.select-content p {
+    font-size: 0.8rem;
+}
+
+.select-tab {
+    /* mh */
+    margin-top: 20px;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 10px 0px 10px;
+    box-sizing: border-box;
+}
+
+.select-tab>div {
+    /* mh */
+    text-align: center;
+    flex: 0 0 80px;
+    min-height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.select-tab .selected {
+    background: #87B9E0;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.select-tab p {
+    font-size: 0.8rem;
+}
+
+.select-tab .selected p {
+    font-weight: bold;
+}
+
+.select-section {
+    /* 이름 추후 변경 */
+    /* mh */
+    width: 100%;
+    min-height: 200px;
+    margin-top: 20px;
+}
+
+
+

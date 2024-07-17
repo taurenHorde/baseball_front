@@ -1,0 +1,152 @@
+.Modalteam-Wrap {
+    width: 500px;
+    min-height: 250px;
+    background: white;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.Modalteam-Wrap .team-step {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-step .step-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0px 0px 5px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+.team-step .step-title h6 {
+    font-size: 1rem;
+    margin: 2px 0px
+}
+
+.team-step .step-title p {
+    font-size: 0.7rem;
+    margin: 2px 0px;
+    color: gray;
+}
+
+.team-step .step-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 0px;
+}
+
+.team-step .step-form>p {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.team-step .step-form>p>span {
+    margin-left: 10px;
+}
+
+.team-step .step-form .step-input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 4px 0px;
+}
+
+.team-step .step-form .step-input input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    background: rgba(128, 128, 128, 0.253);
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
+.team-step .step-form .step-input .selected {
+    background: rgba(255, 0, 0, 0.13);
+    animation: warn;
+    animation-duration: 0.5s;
+}
+
+@keyframes warn {
+    0% {
+        transform: translateX(0);
+    }
+
+    15% {
+        transform: translateX(-10px);
+    }
+
+    30% {
+        transform: translateX(10px);
+    }
+
+    45% {
+        transform: translateX(-10px);
+    }
+
+    60% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.team-step .step-form .step-select {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 4px 0px;
+}
+
+.team-step .step-form .step-select>div {
+    padding: 5px 10px;
+    background: rgba(172, 212, 228, 0.281);
+    margin: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.team-step .step-form .step-select>div p {
+    width: 100%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    user-select: none;
+}
+
+.team-step .step-form .step-select>.choose {
+    background: skyblue;
+}
+
+.team-step .step-form .step-select>.choose p {
+    color: white;
+}
+
+.team-step .step-button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.team-step .step-button button {
+    width: 100px;
+    height: 40px;
+    background: #87b9e0;
+    color: white;
+    border: none;
+}

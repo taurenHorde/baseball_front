@@ -1,0 +1,364 @@
+.Guestwrite-Wrap,
+.Bulletinwrite-Wrap {
+    width: 100%;
+}
+
+.Guestwrite-Wrap .guestwrite-info,
+.Bulletinwrite-Wrap .bulletinwrite-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 5px 0px;
+}
+
+.Guestwrite-Wrap .guestwrite-info h5,
+.Bulletinwrite-Wrap .bulletinwrite-info h5 {
+    font-size: 1rem;
+    padding: 10px 0px;
+}
+
+.Guestwrite-Wrap .guestwrite-info p,
+.Bulletinwrite-Wrap .bulletinwrite-info p {
+    color: red;
+    font-size: 0.7rem;
+}
+
+.Guestwrite-Wrap .guestwrite-form,
+.Bulletinwrite-Wrap .bulletinwrite-form {
+    width: 100%;
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-button,
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-button>div,
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-button>div {
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-button>div p,
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-button>div p {
+    font-size: 0.7rem;
+    color: red;
+    font-weight: bold;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-button button,
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-button button {
+    width: 100px;
+    height: 30px;
+    margin: 0px 5px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.7rem;
+
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-button button:first-of-type,
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-button button:first-of-type {
+    background: #87b9e0;
+    color: white;
+}
+
+/* guset */
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-body,
+.Guestwrite-Wrap .guestwrite-form .guestwrite-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-body textarea {
+    width: 100%;
+    min-height: 50px;
+    box-sizing: border-box;
+    resize: none;
+    padding: 10px 10px;
+    border: 1px solid rgb(218, 217, 217);
+    overflow: hidden;
+    outline: none;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-footer .footer-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-footer .footer-section>h6 {
+    font-size: 0.7rem;
+    flex: 0 0 90px;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-footer .footer-section>div {
+    flex: 1 1;
+    margin: 0px 0px 0px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-footer .footer-section .Personnel>div {
+    margin: 5px 0px;
+    min-height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-footer .footer-section .Personnel>div p {
+    font-size: 0.8rem;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-footer .footer-section>div select,
+.Guestwrite-Wrap .guestwrite-form .guestwrite-footer .footer-section>div input {
+    margin: 0px 10px;
+    min-height: 20px;
+    color: black;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    border: 1px solid rgb(218, 217, 217);
+    outline: none;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+}
+
+.Guestwrite-Wrap .guestwrite-form .guestwrite-footer .footer-section>div h6 {
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+/* bulletin */
+
+.Bulletinwrite-Wrap {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-classification {
+    display: flex;
+    margin-top: 5px;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.Bulletinwrite-Wrap .bulletinwrite-classification .option {
+    min-width: 40px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.205);
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-classification .selected {
+    background: rgb(104, 104, 248);
+    color: white;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-classification .option p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-head,
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-body,
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-head input {
+    width: 100%;
+    max-width: 700px;
+    border: none;
+    height: 30px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background: rgba(221, 221, 221, 0.116);
+    outline: none;
+
+}
+
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-body textarea {
+    width: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    height: 30px;
+    padding: 10px 10px;
+    background: rgba(221, 221, 221, 0.116);
+    outline: none;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer>div {
+    width: 100%;
+    min-height: 100px;
+    margin: 10px 0px;
+    background: rgba(221, 221, 221, 0.116);
+}
+
+/* picture */
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-picture {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-picture .picture-top,
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-picture .picture-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 5px 0px;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-picture .picture-top .picture-l {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    margin: 5px 5px;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-picture .picture-top .picture-r {
+    flex: 1 1;
+    margin: 0px 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-picture .picture-top .picture-r .mini-picturebox {
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px;
+
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.103);
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-picture .picture-bottom p {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+/* review */
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-review {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-review .review-select {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-review .review-select p {
+    width: 70px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0px 10px 0px 10px;
+    box-sizing: border-box;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-review .review-select select {
+    flex: 1 1;
+    padding: 0px 10px;
+    min-height: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-review .review-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0px 5px 0px;
+    box-sizing: border-box;
+}
+
+.Bulletinwrite-Wrap .bulletinwrite-form .bulletinwrite-footer .bulletinwrite-review .review-info p {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .Guestwrite-Wrap .guestwrite-form .guestwrite-footer .mediaquery>div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Guestwrite-Wrap .guestwrite-form .guestwrite-footer .mediaquery>div input,
+    .Guestwrite-Wrap .guestwrite-form .guestwrite-footer .mediaquery>div select {
+        margin: 5px 0px 5px 10px;
+    }
+
+}

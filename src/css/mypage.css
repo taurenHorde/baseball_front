@@ -1,0 +1,278 @@
+.mypage-photo {
+    display: none;
+}
+
+.mypage-content-l {
+    flex: 0 1 380.25px;
+}
+
+.mypage-content-r {
+    flex: 0 1 633.75px;
+}
+
+
+@media (max-width: 1210px) {
+    .mypage-content-l {
+        max-width: 1000px;
+        flex: 1 1 99%;
+        box-sizing: border-box;
+    }
+
+    .mypage-content-r {
+        max-width: 1000px;
+        flex: 1 1 99%;
+        box-sizing: border-box;
+    }
+}
+
+
+.mypage-content-section {
+    /* mh */
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 20px;
+    box-sizing: border-box;
+    background: rgba(201, 200, 200, 0.082);
+    padding: 10px 10px;
+}
+
+.mypage-content-section .mypage-content-myinfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mypage-content-section .mypage-content-myinfo h5 {
+    font-size: 0.8rem;
+}
+
+.mypage-content-section .mypage-content-myinfo p {
+    cursor: pointer;
+    font-size: 0.6rem;
+    text-decoration: gray underline;
+}
+
+.mypage-content-section .mypage-content-notification {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mypage-content-section .mypage-content-notification .notification-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.mypage-content-section .mypage-content-notification .notification-title h5 {
+    font-size: 0.8rem;
+}
+
+.mypage-content-section .mypage-content-notification .notification-title p {
+    font-size: 0.7rem;
+}
+
+.mypage-content-section .mypage-content-notification .notification-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.mypage-content-section .mypage-content-notification .notification-body .notification-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1px 0px;
+}
+
+.mypage-content-section .mypage-content-notification .notification-body .notification-content div:first-child {
+    flex: 1 1;
+    max-width: 280px;
+}
+
+.mypage-content-section .mypage-content-notification .notification-body .notification-content div:last-child {
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.mypage-content-section .mypage-content-notification .notification-body .notification-content div p {
+    font-size: 0.7rem;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.mypage-content-section .mypage-content-notification {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mypage-content-section .mypage-content-calender .calender-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.mypage-content-section .mypage-content-calender .calender-title h5 {
+    flex: 1 1;
+    font-size: 0.8rem;
+}
+
+.mypage-content-section .mypage-content-calender .calender-title>div {
+    width: 9px;
+    height: 9px;
+    border-radius: 10px;
+    margin: 0px 5px;
+    position: relative;
+}
+
+.mypage-content-section .mypage-content-calender .calender-title>div::after {
+    position: absolute;
+    padding: 3px 7px;
+    box-sizing: border-box;
+    font-size: 0.7rem;
+    top: -27px;
+    left: -30px;
+    background: white;
+    border: 1px solid rgba(128, 128, 128, 0.568);
+    border-radius: 20px;
+    text-wrap: nowrap;
+    display: none;
+}
+
+.mypage-content-section .mypage-content-calender .calender-title>div:hover::after {
+    display: block;
+}
+
+.mypage-content-section .mypage-content-calender .calender-title .blue {
+    background: blue;
+}
+
+.mypage-content-section .mypage-content-calender .calender-title .blue::after {
+    content: "[모집] 경기";
+    color: blue;
+}
+
+
+.mypage-content-section .mypage-content-calender .calender-title .green {
+    background: green;
+}
+
+.mypage-content-section .mypage-content-calender .calender-title .green::after {
+    content: "[신청] 확정";
+    color: green
+}
+
+
+.mypage-content-section .mypage-content-calender .calender-title .red {
+    background: red;
+}
+
+.mypage-content-section .mypage-content-calender .calender-title .red::after {
+    content: "[신청] 대기중";
+    color: red;
+}
+
+
+
+
+.mypage-content-section .mypage-content-calender .calender-body {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mypage-content-section .mypage-content-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mypage-content-section .mypage-content-menu .menu-title {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.527);
+    margin-bottom: 10px;
+}
+
+.mypage-content-section .mypage-content-menu .menu-title h5 {
+    font-size: 0.8rem;
+}
+
+.mypage-content-section .mypage-content-menu .menu-bar {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(156, 156, 130, 0.089);
+    margin: 5px 0px;
+}
+
+/* 
+.mypage-content-section .mypage-content-menu .menu-bar .menu-bar-logo {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 0, 0, 0.103);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypage-content-section .mypage-content-menu .menu-bar .menu-bar-logo p {
+    font-weight: bold;
+    font-size: 0.6rem;
+} */
+
+.mypage-content-section .mypage-content-menu .menu-bar .menu-bar-name {
+    flex: 1 1;
+    display: flex;
+    justify-content: start;
+}
+
+.mypage-content-section .mypage-content-menu .menu-bar .menu-bar-name h5 {
+    width: 100%;
+    padding: 0px 20px;
+    font-size: 0.8rem;
+}
+
+.mypage-content-section .mypage-content-menu .menu-bar .menu-bar-button {
+    width: 100px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mypage-content-section .mypage-content-menu .menu-bar .menu-bar-button p {
+    font-size: 0.7rem;
+}
