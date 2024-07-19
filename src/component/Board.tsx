@@ -309,7 +309,7 @@ function FindTeammate() {
     const [loading, setLoading] = useState<boolean>(false)
 
     async function modal_T() {
-        fetch('/check_login', {
+        fetch('api/check_login', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
